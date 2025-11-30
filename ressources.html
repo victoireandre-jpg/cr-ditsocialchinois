@@ -8,90 +8,91 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,700&display=swap">
   <style>
     :root{
-      --bg:#faf7f2;
-      --text:#2a2a2a;
-      --accent:#b63a2b;
-      --stroke:#d8c9b4;
-      --paper:#fefcf8;
-      --card:#f3eee7;
-      --muted:#8d7963;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{
-      font-family:'Noto Serif SC', 'Songti SC', serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.6;
-    }
-    a{text-decoration:none;color:var(--accent)}
-    .container{max-width:960px;margin:40px auto;padding:20px}
-    header{
-      border-bottom:2px solid var(--stroke);
-      padding-bottom:14px;
-      display:flex;align-items:center;justify-content:space-between;
-    }
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{
-      width:48px;height:48px;border-radius:50%;
-      background:var(--paper);
-      border:2px solid var(--stroke);
-      display:flex;align-items:center;justify-content:center;
-      font-family:'Noto Serif SC', serif;
-      font-size:1.2rem;
-      color:var(--accent);
-    }
-    nav a{
-      margin-left:18px;
-      color:var(--accent);
-      font-size:0.95rem;
-      letter-spacing:0.5px;
-    }
-    .hero{
-      margin-top:28px;
-      padding:28px;
-      border:2px solid var(--stroke);
-      background:var(--paper);
-      display:grid;gap:24px;
-      grid-template-columns:1fr;
-    }
-    h1{
-      font-size:2rem;
-      font-weight:600;
-      color:var(--accent);
-      margin-bottom:10px;
-      letter-spacing:1px;
-    }
-    h3{
-      font-size:1.2rem;
-      margin-bottom:6px;
-      color:var(--accent);
-      letter-spacing:0.5px;
-    }
-    p.lead{color:#6b5d4d;font-size:1rem}
-    ul{margin-top:12px;padding-left:18px;}
-    li{margin-bottom:10px;}
-    .card{
-      background:var(--card);
-      border:1px solid var(--stroke);
-      padding:18px;
-      border-radius:4px;
-    }
-    .btn{
-      display:inline-block;
-      padding:10px 16px;
-      border:2px solid var(--accent);
-      border-radius:4px;
-      color:var(--accent);
-      background:transparent;
-      font-family:'Noto Serif SC', serif;
-      letter-spacing:0.5px;
-    }
-    footer{
-      border-top:2px solid var(--stroke);
-      margin-top:32px;padding-top:16px;
-      font-size:0.85rem;color:#7a6d5d;text-align:center;
-    }
-    @media(min-width:720px){ .hero{grid-template-columns:1fr 320px} }
+  --bg:#faf7f2;
+  --text:#2a2a2a;
+  --accent:#b63a2b;
+  --stroke:#d8c9b4;
+  --paper:#fefcf8;
+  --card:#f3eee7;
+  --muted:#8d7963;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Noto Serif SC', 'Songti SC', serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  font-size:1rem; /* harmonisation taille du texte principal */
+}
+a{text-decoration:none;color:var(--accent)}
+.container{max-width:960px;margin:40px auto;padding:20px}
+header{
+  border-bottom:2px solid var(--stroke);
+  padding-bottom:14px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{
+  width:48px;height:48px;border-radius:50%;
+  background:var(--paper);
+  border:2px solid var(--stroke);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Noto Serif SC', serif;
+  font-size:1.2rem;
+  color:var(--accent);
+}
+nav a{
+  margin-left:18px;
+  color:var(--accent);
+  font-size:0.95rem;
+  letter-spacing:0.5px;
+}
+.hero{
+  margin-top:28px;
+  padding:28px;
+  border:2px solid var(--stroke);
+  background:var(--paper);
+  display:grid;gap:24px;
+  grid-template-columns:1fr;
+}
+h1{
+  font-size:2rem;
+  font-weight:600;
+  color:var(--accent);
+  margin-bottom:10px;
+  letter-spacing:1px;
+}
+h3{
+  font-size:1.2rem;
+  margin-bottom:6px;
+  color:var(--accent);
+  letter-spacing:0.5px;
+}
+p.lead{color:#6b5d4d;font-size:1rem}
+ul{margin-top:12px;padding-left:18px;}
+li{margin-bottom:10px;font-size:1rem;} /* cohérence avec index.html */
+.card{
+  background:var(--card);
+  border:1px solid var(--stroke);
+  padding:18px;
+  border-radius:4px;
+}
+.btn{
+  display:inline-block;
+  padding:10px 16px;
+  border:2px solid var(--accent);
+  border-radius:4px;
+  color:var(--accent);
+  background:transparent;
+  font-family:'Noto Serif SC', serif;
+  letter-spacing:0.5px;
+}
+footer{
+  border-top:2px solid var(--stroke);
+  margin-top:32px;padding-top:16px;
+  font-size:0.85rem;color:#7a6d5d;text-align:center;
+}
+@media(min-width:720px){ .hero{grid-template-columns:1fr 320px} }
   </style>
 </head>
 <body>
