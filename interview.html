@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interview avec un spécialiste</title>
+  <meta name="description" content="Entretien sur le crédit social chinois avec un expert." />
+  <style>
+    :root{
+      --bg:#faf7f2;
+      --text:#2a2a2a;
+      --accent:#b63a2b;
+      --stroke:#d8c9b4;
+      --paper:#fefcf8;
+      --card:#f3eee7;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Noto Serif SC', 'Songti SC', serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{text-decoration:none;color:var(--accent)}
+    .container{max-width:960px;margin:40px auto;padding:20px}
+    header{
+      border-bottom:2px solid var(--stroke);
+      padding-bottom:14px;
+      display:flex;align-items:center;justify-content:space-between;
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:48px;height:48px;border-radius:50%;
+      background:var(--paper);
+      border:2px solid var(--stroke);
+      display:flex;align-items:center;justify-content:center;
+      font-family:'Noto Serif SC', serif;
+      font-size:1.2rem;
+      color:var(--accent);
+    }
+    nav a{
+      margin-left:18px;
+      color:var(--accent);
+      font-size:0.95rem;
+      letter-spacing:0.5px;
+    }
+    .hero{
+      margin-top:28px;
+      padding:28px;
+      border:2px solid var(--stroke);
+      background:var(--paper);
+      display:flex;flex-direction:column;gap:24px;
+    }
+    h1{
+      font-size:2rem;
+      font-weight:600;
+      color:var(--accent);
+      margin-bottom:10px;
+      letter-spacing:1px;
+    }
+    h2{
+      font-size:1.3rem;
+      font-weight:500;
+      color:var(--accent);
+      margin-top:16px;
+      margin-bottom:6px;
+      letter-spacing:0.5px;
+    }
+    .interview{
+      background:var(--card);
+      border:1px solid var(--stroke);
+      padding:22px;
+      border-radius:4px;
+      margin-top:12px;
+    }
+    .q{color:var(--accent);font-weight:500;margin-bottom:4px;}
+    .a{margin-bottom:18px;}
+    .avatar{
+      float:right;
+      margin-left:18px;
+      width:66px;
+      border-radius:50%;
+      border:2px solid var(--stroke);
+      background:#fff;
+    }
+    .back-link{
+      display:inline-block;margin-top:16px;
+      color:var(--accent)
+    }
+    footer{
+      border-top:2px solid var(--stroke);
+      margin-top:32px;padding-top:16px;
+      font-size:0.85rem;color:#7a6d5d;text-align:center;
+      clear:both;
+    }
+    @media(max-width:600px){
+      .avatar{float:none;display:block;margin:0 auto 14px;}
+      .interview{padding:14px;}
+      .hero{padding:14px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-label="drapeau chinois" title="Chine">
+          <svg viewBox="0 0 48 48" width="38" height="38" style="display:block;">
+            <rect x="0" y="0" width="48" height="48" rx="24" fill="#DE2910"/>
+            <g transform="translate(11,14)">
+              <polygon fill="#FFDE00" points="0,-6 1.763,-1.854 5.706,-1.854 2.472,0.708 3.535,4.854 0,2.292 -3.535,4.854 -2.472,0.708 -5.706,-1.854 -1.763,-1.854"/>
+            </g>
+            <g transform="translate(20.5,7.2) rotate(23)">
+              <polygon fill="#FFDE00" points="0,-2.2 0.646,-0.678 2.086,-0.678 0.993,0.26 1.413,1.722 0,0.783 -1.413,1.722 -0.993,0.26 -2.086,-0.678 -0.646,-0.678"/>
+            </g>
+            <g transform="translate(23.5,11.5) rotate(45)">
+              <polygon fill="#FFDE00" points="0,-2.2 0.646,-0.678 2.086,-0.678 0.993,0.26 1.413,1.722 0,0.783 -1.413,1.722 -0.993,0.26 -2.086,-0.678 -0.646,-0.678"/>
+            </g>
+            <g transform="translate(23.2,16.5) rotate(70)">
+              <polygon fill="#FFDE00" points="0,-2.2 0.646,-0.678 2.086,-0.678 0.993,0.26 1.413,1.722 0,0.783 -1.413,1.722 -0.993,0.26 -2.086,-0.678 -0.646,-0.678"/>
+            </g>
+            <g transform="translate(20,19.3) rotate(100)">
+              <polygon fill="#FFDE00" points="0,-2.2 0.646,-0.678 2.086,-0.678 0.993,0.26 1.413,1.722 0,0.783 -1.413,1.722 -0.993,0.26 -2.086,-0.678 -0.646,-0.678"/>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <strong>Le crédit social chinois</strong><br>
+          <small style="color:var(--muted)">Une analyse critique</small>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html"><strong>Accueil</strong></a>
+        <a href="histoire.html">Histoire</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="ressources.html">Ressources</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <h1>Entretien avec Pierre Sel</h1>
+      <div>
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Portrait du spécialiste" class="avatar"/>
+        <div class="interview">
+          <h2>Présentation</h2>
+          <p>Pierre Sel est ... à l'université de Vienne et spécialiste du système de crédit social. Il apporte ici son éclairage sur le fonctionnement, les enjeux et les défis actuels de ce projet.</p>
+          <h2>Questions & Réponses</h2>
+          
+          <div class="q">Q1 : Comment définiriez-vous le système de crédit social chinois ?</div>
+          <div class="a">Le système de crédit social chinois est une tentative de construire des mécanismes de régulation du marché et de la société, qui puissent compléter les institutions existantes en chine. Cette définition qui n’est pas simple nous indique déjà que le crédit social est plus large qu’un indicateur unique sur les individus ou les entreprises, voyez ça comme un ensemble de réformes institutionnelles qui visent à améliorer les capacités de réglementation de l’économie et de la société de l’État chinois, au sens large.</div>
+          
+          <div class="q">Q2 : Quel est l’intérêt que voit le gouvernement chinois à effectuer cette notation et à appliquer ce système d’avantages et de pénalités ?</div>
+          <div class="a">Sur la notation, il y a quand même un petit bémol, la notation n’est pas uniforme, c’est-à-dire qu’il n’y a pas de note unique par citoyen ou par entreprise mais l’intérêt il est, paradoxalement de faciliter une forme de régulation, l’idée est donc en assignant des notes ou différents types d’indicateurs, on peut se focaliser seulement sur ceux qui ont des mauvaises notes. Ceux qui ont de bonnes notes du coup, on peut les laisser tranquilles. C’est une idée de gagner du temps presque, d’un point de vue de l’État.</div>
+          
+          <div class="q">Q3 : Quelles sont les différences principales d’application entre individus et entreprises ?</div>
+          <div class="a">Déjà, c’est pas le même type d’indicateurs qui sont traqués : là où on regarde un historique de payement des dettes individuelles, du moins ils essayent d’en mettre un en place, on va pas forcément prendre ça en compte pour les entreprises. De la même manière, on ne demande pas à un individu si il a payé ses dus à la sécurité sociale. On ne suit pas la même chose, pour les individus et les entreprises, c’est pas le même types de critères. Ensuite, pour la question des types d’application : en fait, pour les types d’application, c’est l’idée qu’il y a une principale liste de sanction pour les individus, cette fameuse liste des « judgment default list », donc les gens qui ont été en défaut de payement ou d’honorer leur contrat. Et pour les entreprises il y en a plein, mais en fait ça va varier selon  les institutions en questions, donc il va y avoir la liste pour le ministère des finances, il y a une liste pour l’agence de protection environnementale. Donc en fait il y a plusieurs modèles.</div>
+          
+          <div class="q">Q4 : Quelles sont les principales sources de données utilisées dans le système de crédit social (administratives, bancaires, numériques, comportementales, etc.) ?</div>
+          <div class="a">Ce sont principalement des données administratives, il faut imaginer votre rapport de la caf mais qui est numérisé, donc c’est des fichiers Excel. Après il y a une idée de mise en commun. Les gouvernements construisent une quantité de données hallucinantes mais en fait c’est réparti dans cinq bureaucratie et trois lieux physiques et donc en fait l’idée c’est de mettre tout ça en commun, c’est pas si simple. Et enfin, il y aussi ce qu’ils appellent au sens large les données de crédit public et les données de crédits commerciales, qui elles sont en fait plus des données créées par les entreprises dans leur fonctionnement. Et donc là ça va être des historiques de payement, des pattern d’achats en lignes, ce genre de choses. Mais ces deux types de données ne sont pas régulées de la même manière et n’ont pas les même caractéristiques. Il y a un certain nombre de contraintes qui viennent avec les données publiques qui ne viennent pas avec les données commerciales et en fait les entreprises sont bien plus limitées que l’administration dans le type de données auxquelles elles peuvent collecter. Bon, maintenant ça c’est la théorie, dans la pratique ça reste la chine donc tout le monde fait un peu n’importe quoi et ce qu’il veut. Mais ça c’est une autre question.</div>
+          
+          <div class="q">Q5 : Quel rôle jouent les nouvelles technologies dans la récupération des données et dans la quantification du comportement ?</div>
+          <div class="a">Pour ce qui est de la partie de l’État et ce qui concerne strictement le crédit social, je parle pas de surveillance ou d’autre chose, la réponse est zéro. Par contre, dans ce qui est du privé, dans ce que va faire Alibaba par exemple et ses subsidiaires sur leur outils de payement en ligne et ainsi de suite, là effectivement, il y a beaucoup plus de choses. Je ne suis pas expert, je ne vais pas rentrer dans le détail mais on peut se douter que ça reste une puissance du numérique qui a un écosystème assez fermé d’applications de payement avec aussi adossé un site de e-commerce donc ils ont beaucoup plus de leviers pour vouloir chercher à faire des profils individualisés des consommateurs et de leur vendre des produits. C’est d’ailleurs aussi en partie un des  problèmes entre l’État et les plateformes mais Alibaba en particulier, c’est que l’État a une forme de jalousie par rapport à la capacité des plateformes à avoir ces informations que l’État ne peut pas avoir. Mais voilà, sur ce qui est des sujets de surveillance et de créer des profils individualisés d’individus pour les traquer, pour les suivre, là il y a peut-être plus d’intelligence artificielle. Pour ce qui est du crédit social, c’est grosso-modo un Excel géant. C’est une caricature un petit peu mais elle est assez juste.</div>
+
+          <div class="q">Q6 : Est-ce qu’il y a une hiérarchie dans la fiabilité ou la légitimité des sources de données ?</div>
+          <div class="a">Les données qui viendront de l’administrations seront, d’une certaine manière plus importante que celles qui viennent du privé, mais… Après c’est une question à laquelle il est très difficile de répondre parce qu’on est sur de la donnée principalement administrative, on est sur des tax records, des documents procéduriers, par rapport au respect des normes environnementales par exemple. Ces documents sont produits par l’État, ce qui fait que même si il peut y avoir des doutes sur leur véracité et un certain nombre de chose, dans l’ensemble, on n’agglomère pas vraiment de sources différentes, pour ce qui est des données publiques, ça vient juste de différentes administrations de l’État, mais on considère qu’elles sont légitimes et qu’elles sont fiables dans l’ensemble.</div>
+
+          <div class="q">Q7 : Comment est-ce que ces données sont-elles transformées en un score numérique ?</div>
+          <div class="a">Ça c’est assez arbitrairement dans une certaine mesure. Surtout qu’en fait encore une fois, l’aspect score n’est pas non plus lancé à l’échelle nationale, c’est pas centralisé. Ce qui veut dire que, par exemple, on peut avoir le ministère du commerce, l’agence en charge de la régulation du marché, j’imagine qu’ils ont plus ou moins un tableur qui leur donne des consignes mais rien n’indique qu’il n’y ait pas des manières de calculer différentes entre Shanghai et Hebei [province chinoise autour de Beijing], c’est tout à fait possible. Et donc là, même les scores, vont être très différents d’une administration à l’autre. Il n’y a pas de score centralisé. Donc oui, pour ce qui est de tourner les données qualitatives en données numériques, ça…, puis j’avoue que j’ai pas regardé le détail des guides des cadres du parti communiste pour savoir quel score il doit donner à quelle entreprises donc ça je ne peux pas répondre trop en détail.</div>
+
+          <div class="q">Q8 : Est-ce qu’on peut parler d’une “gouvernance par les nombres”, au sens d’Alain Supiot, dans le cas chinois ?</div>
+          <div class="a">Oui, alors, les nombres au sens général du terme, pas forcément au sens des nombres… Tout n’est pas réduit à un score de 1 à 10 ou de 1 à 100. Mais il y a très clairement une volonté du gouvernement chinois de faciliter la gouvernance au sens large en pouvant d’appuyer sur des indicateurs quantifiables. Mais quantifiables ça peut être par exemple des choses, et là je m’éloigne un peu de la définition stricto sensu, mais on peut considérer comme quantifiable l’idée qu’il va y avoir A, B ou C comme catégorie, c’est l’idée que les entreprises qui sont en catégorie A on s’en occupe pas, celles qui sont en catégorie B on s’en occupe un petit peu et celles qui sont en catégorie C c’est priorité générale. Donc c’est pas de la quantification dans le sens où il ne va pas y avoir des scores à donner à tout mais il y a une volonté de rationalisation comme Supiot en parle, oui. Et le crédit social en est une des incarnation mais de manière générale, le gouvernement chinois voit dans les technologies numériques une grande aide/solution pour gouverner plus efficacement. Ce qui est une problématique ancienne, il y a ce fameux bouquin qui est un classique des sciences politiques « Seeing like a State », de James C. Scott, où il montre que les États modernes, même avant modernes, déjà prémodernes, ont une obsession qui est de rendre la société plus lisible. Et ce que Supiot dit ça s’intègre dans cet héritage, que par les nombres on peut rendre la société plus lisible et donc plus facilement gouvernable. Dans une logique d’efficacité, dans une logique de renforcement de la puissance de l’État. Je suis d’accord avec votre question et je réponds oui, et je dis que ça participe d’un processus plus large.</div>
+
+          <div class="q">Q9 : Quelle frontière entre quantification légitime pour la sécurité publique et surveillance intrusive, comme elle est souvent décrite pour le crédit social, du moins en occident ?</div>
+          <div class="a">Dans le cadre du crédit social, c’est vrai que c’est décrit un peu maladroitement, mais la question… C’est une forme glissante cette question donc en fait si je dois répondre à titre personnel, je pense que qu’il y ai des formes de quantification pour des entreprises, pourquoi pas. Mais après, de manière général… Il y aura toujours cette tension entre la volonté de l’État de simplifier et donc de simplifier en attribuant des scores, des nombres et en ayant cette logique toujours plus intrusive. Bon, je pense qu’il faut la combattre, la frontière est évidemment poreuse. Bon après c’est un argument politique marketing que les États utilisent mais il n’est pas forcément légitime.</div>
+
+          <div class="q">Q10 : Comment la société chinoise perçoit-elle le score de crédit social ? (une contrainte, une protection, une opportunité)</div>
+          <div class="a">J’insiste, il n’y a pas vraiment de score de crédit social, mais dans ce qui est de l’implantation du crédit social, la société chinoise est, d’une certaine manière comme ce qu’on peut retrouver dans certaines société occidentales aujourd’hui aussi, il y a une demande profonde du peuple, au sens large, enfin de ceux qui s’estiment être du peuple, pour des outils qui vont en fait faire respecter les règles aux autres. C’est qu’il y a toujours ceux qui sont perçus comme les profiteurs qui ne respectent pas les règles et « moi je respecte les règles alors pourquoi est-ce que je suis désavantagé si je suis le seul à respecter les règles ? ». Donc ça, cette logique-là, que l’on peut retrouver en démocratie aussi, même si c’est pas sur des projets numériques, cette logique-là est un fort levier politique et les gens soutiennent ce pour quoi le crédit social est présenté parce qu’en fait c’est l’idée que « grâce à cet outil, moi qui respecte les règles, je ne serais pas pénalisé par rapport à quelqu’un qui ne le fait pas ».</div>
+
+        </div>
+      </div>
+      <a class="back-link" href="index.html">&larr; Retour à l'accueil</a>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Sciences Po Paris • Déployé avec GitHub Pages</p>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
