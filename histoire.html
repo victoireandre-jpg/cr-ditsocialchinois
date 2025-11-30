@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Histoire — Crédit social chinois</title>
+  <meta name="description" content="Histoire du système de crédit social chinois" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,700&display=swap">
+  <style>
+    :root{
+      --bg:#faf7f2;
+      --text:#2a2a2a;
+      --accent:#b63a2b;
+      --stroke:#d8c9b4;
+      --paper:#fefcf8;
+      --card:#f3eee7;
+      --muted:#8d7963;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Noto Serif SC', 'Songti SC', serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{text-decoration:none;color:var(--accent)}
+    .container{max-width:960px;margin:40px auto;padding:20px}
+    header{
+      border-bottom:2px solid var(--stroke);
+      padding-bottom:14px;
+      display:flex;align-items:center;justify-content:space-between;
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:48px;height:48px;border-radius:50%;
+      background:var(--paper);
+      border:2px solid var(--stroke);
+      display:flex;align-items:center;justify-content:center;
+      font-family:'Noto Serif SC', serif;
+      font-size:1.2rem;
+      color:var(--accent);
+    }
+    nav a{
+      margin-left:18px;
+      color:var(--accent);
+      font-size:0.95rem;
+      letter-spacing:0.5px;
+    }
+    main.zones{
+      margin-top:36px;
+      display:flex;
+      gap:32px;
+      justify-content:center;
+      align-items:stretch;
+    }
+    .zone{
+      flex:1;
+      background:var(--card);
+      border:2px solid var(--stroke);
+      border-radius:4px;
+      padding:32px 24px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      min-width:0;
+    }
+    .zone h2{
+      color:var(--accent);
+      font-size:1.35rem;
+      margin-bottom:12px;
+      letter-spacing:0.5px;
+      font-weight:600;
+    }
+    .zone p{
+      color:var(--muted);
+      margin-bottom:0;
+      font-size:1.05rem;
+    }
+
+    @media(max-width:800px){
+      main.zones{
+        flex-direction:column;
+        gap:18px;
+      }
+    }
+
+    footer{
+      border-top:2px solid var(--stroke);
+      margin-top:32px;padding-top:16px;
+      font-size:0.85rem;color:#7a6d5d;text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SG</div>
+        <div>
+          <strong>Le crédit social chinois</strong><br>
+          <small style="color:var(--muted)">Une analyse critique</small>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="histoire.html"><strong>Histoire</strong></a>
+        <a href="index.html#contact">Contact</a>
+        <a href="ressources.html">Ressources</a>
+      </nav>
+    </header>
+
+    <main class="zones">
+      <section class="zone">
+        <h2>Origines</h2>
+        <p>
+          ...
+        </p>
+      </section>
+      <section class="zone">
+        <h2>Définition</h2>
+        <p>
+          ...
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Sciences Po Paris • Déployé avec GitHub Pages</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
