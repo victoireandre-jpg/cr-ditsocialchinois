@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>À propos • Mon site</title>
+  <meta name="description" content="À propos de ce projet sur GitHub Pages" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:linear-gradient(180deg,var(--bg),#071028);color:#fff;line-height:1.5}
+    .container{max-width:680px;margin:32px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+    .card{background:var(--card);padding:18px;border-radius:12px;margin:16px 0}
+    footer{margin-top:28px;color:var(--muted);font-size:0.9rem;text-align:center}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#041024;text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SG</div>
+        <div>
+          <strong>Mon site</strong><br>
+          <small style="color:var(--muted)">À propos</small>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="card">
+        <h1>À propos</h1>
+        <p style="color:var(--muted)">
+          Ce site est un exemple moderne, déployé gratuitement via GitHub Pages. Il met en avant la simplicité d’hébergement, la personnalisation facile, et la rapidité de mise en ligne.
+        </p>
+        <p>
+          Vous pouvez personnaliser ce site pour présenter vos projets, portfolio, ou tout autre contenu statique.  
+        </p>
+        <p>
+          <strong>Auteur :</strong> Votre nom ici<br>
+          <strong>Domaine :</strong> creditsocialschinois
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Mon site • Déployé avec GitHub Pages</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
